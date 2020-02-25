@@ -101,6 +101,11 @@ void all_modules(Platform *platform) {
     }
 }
 
+void agree(Platform *platform) {
+    platform->head->set_pitch(100);
+    platform->head->set_pitch(-100);
+}
+
 } // namespace TESTS
 
 namespace MISSIONS {
@@ -113,18 +118,6 @@ void core(Platform *platform) {
     platform->r_hand->forearm->stop();
     delay(1000);
 
-    // Open grab
-    platform->r_hand->wrist->start(true);
-    delay(250);
-    platform->r_hand->wrist->stop();
-    delay(1500);
-
-    // Take target - close grab
-    platform->r_hand->wrist->start(false);
-    delay(2500);
-    platform->r_hand->wrist->stop();
-    delay(1000);
-
     // Hand forward
     platform->r_hand->forearm->start(true);
     platform->r_hand->set_rotation_shoulder(90 + 60, true);
@@ -133,12 +126,6 @@ void core(Platform *platform) {
     platform->r_hand->set_rotation_shoulder(90 + 75, true);
 
     delay(5000);
-
-    // Release target
-    platform->r_hand->wrist->start(true);
-    delay(500);
-    platform->r_hand->wrist->stop();
-
 }
 
 }

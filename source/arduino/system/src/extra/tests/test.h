@@ -3,9 +3,9 @@
 #include "Arduino.h"
 #include "../../platform.h"
 
-#define T_HEAD 1
+#define T_HEAD 0
 
-#define T_CHASSIS 0
+#define T_CHASSIS 1
 
 #define T_SHOULDER 0
 #define T_FOREARM 0
@@ -14,7 +14,7 @@
 namespace TESTS {
 
 void all_modules(Platform *platform);
-
+void agree(Platform *platform);
 
 } // namespace TESTS
 
