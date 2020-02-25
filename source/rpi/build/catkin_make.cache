@@ -1,2 +1,0 @@
-
--DCATKIN_DEVEL_PREFIX=/home/vadim/git_repos/SBRWVI/source/Rpi/devel -DCMAKE_INSTALL_PREFIX=/home/vadim/git_repos/SBRWVI/source/Rpi/install -G Unix Makefiles
