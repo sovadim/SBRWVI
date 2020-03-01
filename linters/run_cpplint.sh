@@ -1,0 +1,1 @@
+cpplint --filter=-legal/copyright,-build/include arduino/system/src/*
