@@ -1,5 +1,7 @@
 language: C++
 
+sudo: false
+
 test_style:
     stage: test_style
     script:
