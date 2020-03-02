@@ -1,1 +1,1 @@
-cpplint --filter=-legal/copyright,-build/include arduino/system/src/*
+cpplint --filter=-legal/copyright,-build/include `find -regex '\(.*[.]cpp\|.*[.]h\)'`
