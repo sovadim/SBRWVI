@@ -1,0 +1,10 @@
+language: C++
+
+sudo: false
+
+test_style:
+    stage: test_style
+    script:
+        - ./linters/prerequisites.sh
+        - ./linters/run_cpplint.sh
+        - ./linters/run_cppcheck.sh
