@@ -9,17 +9,11 @@ LinearDrive::~LinearDrive() {
     delete motor;
 }
 
-void LinearDrive::open() {
+void LinearDrive::open() {}
 
-}
+void LinearDrive::close() {}
 
-void LinearDrive::close() {
-    
-}
-
-void LinearDrive::set_position(double position) {
-
-}
+void LinearDrive::set_position(double position) {}
 
 void LinearDrive::start(bool direction) {
     if (direction) {

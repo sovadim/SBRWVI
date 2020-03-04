@@ -1,8 +1,7 @@
 #include "gyro.h"
 #include "Arduino.h"
 
-Gyro::Gyro()
-{
+Gyro::Gyro() {
   Wire.begin();
   Wire.beginTransmission(MPU_addr);
   Wire.write(0x6B);
@@ -10,16 +9,14 @@ Gyro::Gyro()
   Wire.endTransmission(true);
 }
 
-void Gyro::debug()
-{
-  while(true)
-  {
+void Gyro::debug() {
+  while (true) {
     Wire.beginTransmission(MPU_addr);
     Wire.write(0x3B);
 
     Wire.endTransmission(false);
     Wire.requestFrom(MPU_addr, 14, true);
-    
+
     // 0x3B (ACCEL_XOUT_H) & 0x3C (ACCEL_XOUT_L)
     AcX = Wire.read() << 8 | Wire.read();
     // 0x3D (ACCEL_YOUT_H) & 0x3E (ACCEL_YOUT_L)

@@ -2,7 +2,6 @@
 #include "Arduino.h"
 
 DCMotor::DCMotor(Pins pins) {
-
     this->pins.a = pins.a;
     this->pins.b = pins.b;
     this->pins.en = pins.en;
@@ -11,7 +10,7 @@ DCMotor::DCMotor(Pins pins) {
     pinMode(pins.b, OUTPUT);
     pinMode(pins.en, OUTPUT);
 
-    //digitalWrite(pins.en, HIGH);
+    // digitalWrite(pins.en, HIGH);
 }
 
 void DCMotor::set_speed(int rate) {
