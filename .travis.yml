@@ -1,10 +1,16 @@
-language: C++
+os: linux
+dist: bionic
+sudo: required
 
-sudo: false
+language: cpp
+compiler: gcc
 
-test_style:
-    stage: test_style
-    script:
-        - ./linters/prerequisites.sh
-        - ./linters/run_cpplint.sh
-        - ./linters/run_cppcheck.sh
+install:
+    - sudo apt-get update -y
+    - sudo apt-get install -y python-pip
+    - python -m pip install cpplint
+    - sudo apt-get install -y cppcheck
+
+script:
+    - source linters/run_cpplint.sh
+    - source linters/run_cppcheck.sh
