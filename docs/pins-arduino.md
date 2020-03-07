@@ -2,70 +2,104 @@
 
 This document describes the assignment of pins to arduino in the SBRWVI project
 
+### Component - head
 
-/// Head ////////////////////////
-#define IN_YAW_L 33
-#define IN_YAW_R 31
-#define EN_YAW__ 29
+IN_YAW_L 33
 
-#define IN_PITCH_1 8
-#define IN_PITCH_2 9
-#define IN_PITCH_3 10
-#define IN_PITCH_4 11
-/////////////////////////////////
+IN_YAW_R 31
 
-/// Chassis /////////////////////
-#define L_IN_F 0  // IN1
-#define L_IN_B 0  // IN2
-#define L_EN 0  // ENA
+EN_YAW__ 29
 
-#define R_IN_F 26  // IN3
-#define R_IN_B 24  // IN4
-#define R_EN 22  // ENB
 
-#define L_ENC_IN_F 0
-#define L_ENC_IN_B 0
+IN_PITCH_1 8
 
-#define R_ENC_IN_F 0
-#define R_ENC_IN_B 0
-/////////////////////////////////
+IN_PITCH_2 9
 
-/// Hands ///////////////////////
-// shoulders
-#define SRV_PIN_L 39
-#define SRV_PIN_R 41
-#define SHOULDERS_START_POS 125
+IN_PITCH_3 10
 
-// left forearm
-#define IN_LEFT_EL_L 42
-#define IN_LEFT_EL_R 44
-#define EN_LEFT_EL__ 46
+IN_PITCH_4 11
 
-// right forearm
-#define IN_RIGHT_EL_L 53
-#define IN_RIGHT_EL_R 51
-#define EN_RIGHT_EL__ 49
+### Component - chassis
 
-// left wrist
-#define IN_LEFT_WR_L 25
-#define IN_LEFT_WR_R 27
-#define EN_LEFT_WR__ 23
+L_IN_F 0  // IN1
 
-// right wrist
-#define IN_RIGHT_WR_L 52
-#define IN_RIGHT_WR_R 50
-#define EN_RIGHT_WR__ 48
+L_IN_B 0  // IN2
 
-/// encoders ////////////////////
-#define ENC_SHLD_LEFT_A 0
-#define ENC_SHLD_LEFT_B 0
+L_EN 0  // ENA
 
-#define ENC_SHLD_RIGHT_A 0
-#define ENC_SHLD_RIGHT_B 0
 
-#define ENC_WRT_RIGHT_A 0
-#define ENC_WRT_RIGHT_B 0
+R_IN_F 26  // IN3
 
-#define ENC_YAW_A 0
-#define ENC_YAW_B 0
-//
+R_IN_B 24  // IN4
+
+R_EN 22  // ENB
+
+
+L_ENC_IN_F 0
+
+L_ENC_IN_B 0
+
+
+R_ENC_IN_F 0
+
+R_ENC_IN_B 0
+
+### Component - hands
+
+* shoulders
+
+SRV_PIN_L 39
+
+SRV_PIN_R 41
+
+SHOULDERS_START_POS 125
+
+* left forearm
+
+IN_LEFT_EL_L 42
+
+IN_LEFT_EL_R 44
+
+EN_LEFT_EL__ 46
+
+* right forearm
+
+IN_RIGHT_EL_L 53
+
+IN_RIGHT_EL_R 51
+
+EN_RIGHT_EL__ 49
+
+* left wrist
+
+IN_LEFT_WR_L 25
+
+IN_LEFT_WR_R 27
+
+EN_LEFT_WR__ 23
+
+* right wrist
+
+IN_RIGHT_WR_L 52
+
+IN_RIGHT_WR_R 50
+
+EN_RIGHT_WR__ 48
+
+* encoders
+
+ENC_SHLD_LEFT_A 0
+
+ENC_SHLD_LEFT_B 0
+
+ENC_SHLD_RIGHT_A 0
+
+ENC_SHLD_RIGHT_B 0
+
+ENC_WRT_RIGHT_A 0
+
+ENC_WRT_RIGHT_B 0
+
+
+ENC_YAW_A 0
+ENC_YAW_B 0
