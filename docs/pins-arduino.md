@@ -1,6 +1,6 @@
 # PINS arduino
 
-This document describes the assignment of pins to arduino in the SBRWVI project
+This document describes the assignment of pins to arduino Mega in the SBRWVI project
 
 ### Component - head
 
