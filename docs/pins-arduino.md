@@ -21,24 +21,25 @@ IN_PITCH_4 11
 
 ### Component - chassis
 
-L_IN_F 0  // IN1
+**Left wheel:**
 
-L_IN_B 0  // IN2
+`47` - INPUT A</br>
+`45` - INPUT B</br>
+`4`  - ENABLE (pwm)</br>
 
-L_EN 0  // ENA
+**Right wheel:**
 
+`26` - INPUT A</br>
+`24` - INPUT B</br>
+`4`  - ENABLE (pwm)</br>
 
-R_IN_F 26  // IN3
-
-R_IN_B 24  // IN4
-
-R_EN 22  // ENB
-
+**Left wheel encoder:**
 
 L_ENC_IN_F 0
 
 L_ENC_IN_B 0
 
+**Right wheel encoder:**
 
 R_ENC_IN_F 0
 
