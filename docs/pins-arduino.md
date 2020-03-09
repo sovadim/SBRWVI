@@ -4,20 +4,18 @@ This document describes the assignment of pins to arduino Mega in the SBRWVI pro
 
 ### Component - head
 
-IN_YAW_L 33
+**Yaw:**
 
-IN_YAW_R 31
+IN_YAW_L 33</br>
+IN_YAW_R 31</br>
+EN_YAW__ 29</br>
 
-EN_YAW__ 29
+**Pitch:**
 
-
-IN_PITCH_1 8
-
-IN_PITCH_2 9
-
-IN_PITCH_3 10
-
-IN_PITCH_4 11
+IN_PITCH_1 8</br>
+IN_PITCH_2 9</br>
+IN_PITCH_3 10</br>
+IN_PITCH_4 11</br>
 
 ### Component - chassis
 
@@ -25,7 +23,7 @@ IN_PITCH_4 11
 
 `47` - INPUT A</br>
 `45` - INPUT B</br>
-`4`  - ENABLE (pwm)</br>
+`5`  - ENABLE (pwm)</br>
 
 **Right wheel:**
 
@@ -35,72 +33,41 @@ IN_PITCH_4 11
 
 **Left wheel encoder:**
 
-L_ENC_IN_F 0
-
-L_ENC_IN_B 0
+L_ENC_IN_F 0</br>
+L_ENC_IN_B 0</br>
 
 **Right wheel encoder:**
 
-R_ENC_IN_F 0
-
-R_ENC_IN_B 0
+R_ENC_IN_F 0</br>
+R_ENC_IN_B 0</br>
 
 ### Component - hands
 
-* shoulders
+**Shoulders:**
 
-SRV_PIN_L 39
+SRV_PIN_L 39</br>
+SRV_PIN_R 41</br>
 
-SRV_PIN_R 41
+**Left forearm:**
 
-SHOULDERS_START_POS 125
+IN_LEFT_EL_L 42</br>
+IN_LEFT_EL_R 44</br>
+EN_LEFT_EL__ 46</br>
 
-* left forearm
+**Right forearm:**
 
-IN_LEFT_EL_L 42
+IN_RIGHT_EL_L 53</br>
+IN_RIGHT_EL_R 51</br>
+EN_RIGHT_EL__ 49</br>
 
-IN_LEFT_EL_R 44
+**Left wrist:**
 
-EN_LEFT_EL__ 46
+IN_LEFT_WR_L 25</br>
+IN_LEFT_WR_R 27</br>
+EN_LEFT_WR__ 23</br>
 
-* right forearm
+**Right wrist:**
 
-IN_RIGHT_EL_L 53
-
-IN_RIGHT_EL_R 51
-
-EN_RIGHT_EL__ 49
-
-* left wrist
-
-IN_LEFT_WR_L 25
-
-IN_LEFT_WR_R 27
-
-EN_LEFT_WR__ 23
-
-* right wrist
-
-IN_RIGHT_WR_L 52
-
-IN_RIGHT_WR_R 50
-
-EN_RIGHT_WR__ 48
-
-* encoders
-
-ENC_SHLD_LEFT_A 0
-
-ENC_SHLD_LEFT_B 0
-
-ENC_SHLD_RIGHT_A 0
-
-ENC_SHLD_RIGHT_B 0
-
-ENC_WRT_RIGHT_A 0
-
-ENC_WRT_RIGHT_B 0
-
-
-ENC_YAW_A 0
-ENC_YAW_B 0
+IN_RIGHT_WR_L 52</br>
+IN_RIGHT_WR_R 50</br>
+EN_RIGHT_WR__ 48</br>
