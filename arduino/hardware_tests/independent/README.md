@@ -1,3 +1,0 @@
-### Implemented tests:
-
-- [ ] dc motor
