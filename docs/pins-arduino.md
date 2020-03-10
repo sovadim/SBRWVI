@@ -23,13 +23,13 @@ IN_PITCH_4 11</br>
 
 `47` - INPUT A</br>
 `45` - INPUT B</br>
-`5`  - ENABLE (pwm)</br>
+`5` - ENABLE (pwm)</br>
 
 **Right wheel:**
 
 `26` - INPUT A</br>
 `24` - INPUT B</br>
-`4`  - ENABLE (pwm)</br>
+`4` - ENABLE (pwm)</br>
 
 **Left wheel encoder:**
 
@@ -41,19 +41,12 @@ L_ENC_IN_B 0</br>
 R_ENC_IN_F 0</br>
 R_ENC_IN_B 0</br>
 
-### Component - MPU-6050
-
-`3.3V` - VCC</br>
-`GND`  - GND</br>
-`20`   - SDA</br>
-`21`   - SCL</br>
-
 ### Component - hands
 
 **Shoulders:**
 
-SRV_PIN_L 39</br>
-SRV_PIN_R 41</br>
+`39` - left servo</br>
+`41` - right servo</br>
 
 **Left forearm:**
 
@@ -78,3 +71,10 @@ EN_LEFT_WR__ 23</br>
 IN_RIGHT_WR_L 52</br>
 IN_RIGHT_WR_R 50</br>
 EN_RIGHT_WR__ 48</br>
+
+### Component - MPU-6050
+
+`3.3V` - VCC</br>
+`GND` - GND</br>
+`20` - SDA</br>
+`21` - SCL</br>
