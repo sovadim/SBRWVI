@@ -41,6 +41,13 @@ L_ENC_IN_B 0</br>
 R_ENC_IN_F 0</br>
 R_ENC_IN_B 0</br>
 
+### Component - MPU-6050
+
+`3.3V` - VCC</br>
+`GND`  - GND</br>
+`20`   - SDA</br>
+`21`   - SCL</br>
+
 ### Component - hands
 
 **Shoulders:**
