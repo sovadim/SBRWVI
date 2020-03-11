@@ -6,16 +6,16 @@ This document describes the assignment of pins to arduino Mega in the SBRWVI pro
 
 **Yaw:**
 
-IN_YAW_L 33</br>
-IN_YAW_R 31</br>
-EN_YAW__ 29</br>
+`33` - INPUT_A</br>
+`31` - INPUT_B</br>
+`29` - ENABLE</br>
 
 **Pitch:**
 
-IN_PITCH_1 8</br>
-IN_PITCH_2 9</br>
-IN_PITCH_3 10</br>
-IN_PITCH_4 11</br>
+`8` - INPUT 1</br>
+`9` - INPUT 2</br>
+`10` - INPUT 3</br>
+`11` - INPUT 4</br>
 
 ### Component - chassis
 
@@ -33,13 +33,11 @@ IN_PITCH_4 11</br>
 
 **Left wheel encoder:**
 
-L_ENC_IN_F 0</br>
-L_ENC_IN_B 0</br>
+`19` - PHASE A (int)</br>
 
 **Right wheel encoder:**
 
-R_ENC_IN_F 0</br>
-R_ENC_IN_B 0</br>
+`18` - PHASE A (int)</br>
 
 ### Component - hands
 
@@ -50,27 +48,27 @@ R_ENC_IN_B 0</br>
 
 **Left forearm:**
 
-IN_LEFT_EL_L 42</br>
-IN_LEFT_EL_R 44</br>
-EN_LEFT_EL__ 46</br>
+`42` - INPUT_A</br>
+`44` - INPUT_B</br>
+`46` - ENABLE</br>
 
 **Right forearm:**
 
-IN_RIGHT_EL_L 53</br>
-IN_RIGHT_EL_R 51</br>
-EN_RIGHT_EL__ 49</br>
+`53` - INPUT_A</br>
+`51` - INPUT_B</br>
+`49` - ENABLE</br>
 
 **Left wrist:**
 
-IN_LEFT_WR_L 25</br>
-IN_LEFT_WR_R 27</br>
-EN_LEFT_WR__ 23</br>
+`25` - INPUT_A</br>
+`27` - INPUT_B</br>
+`23` - ENABLE</br>
 
 **Right wrist:**
 
-IN_RIGHT_WR_L 52</br>
-IN_RIGHT_WR_R 50</br>
-EN_RIGHT_WR__ 48</br>
+`52` - INPUT_A</br>
+`50` - INPUT_B</br>
+`48` - ENABLE</br>
 
 ### Component - MPU-6050
 
