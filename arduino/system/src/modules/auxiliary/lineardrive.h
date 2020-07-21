@@ -3,9 +3,10 @@
 #include "Arduino.h"
 #include "dcmotor.h"
 
-class LinearDrive
-{
-public:
+#define MAX_SPEED HIGH
+
+class LinearDrive {
+ public:
     explicit LinearDrive(Pins pins);
     ~LinearDrive();
 
@@ -30,11 +31,8 @@ public:
     // 0.0 (disabled) < speed < 1.0 (MAX_SPEED)
     void set_speed(double speed);
 
-private:
+ private:
     DCMotor* motor;
     bool opened;
     unsigned speed;
-    const static unsigned MAX_SPEED = HIGH;
 };
-
-

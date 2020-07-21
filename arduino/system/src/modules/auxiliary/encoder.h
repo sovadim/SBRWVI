@@ -1,10 +1,9 @@
 #pragma once
 
-class Encoder
-{
-private:
+class Encoder {
+ private:
     /* data */
-public:
-    explicit Encoder(/* args */);
+ public:
+    Encoder(/* args */);
     ~Encoder();
 };

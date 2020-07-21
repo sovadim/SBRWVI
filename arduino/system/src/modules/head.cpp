@@ -2,20 +2,19 @@
 #include "Arduino.h"
 
 Head::Head(Pins yaw_pins, Pins4 pitch_pins) {
-
   /// PITCH
-  //stepper;
+  // stepper;
   motor_pitch = new Stepper(4, pitch_pins.in1, pitch_pins.in3,
-                              pitch_pins.in2, pitch_pins.in4);  
+                            pitch_pins.in2, pitch_pins.in4);
 
   motor_pitch->setSpeed(800);
   /// ENCODERS
-  //yaw = 0;
-  //pitch = 0;
-  
-  //pinMode(ENC_YAW_A, INPUT_PULLUP);
-  //pinMode(ENC_YAW_B, INPUT_PULLUP);
-  
+  // yaw = 0;
+  // pitch = 0;
+
+  // pinMode(ENC_YAW_A, INPUT_PULLUP);
+  // pinMode(ENC_YAW_B, INPUT_PULLUP);
+
   motor_yaw = new DCMotor(yaw_pins);
 }
 
@@ -36,6 +35,4 @@ void Head::set_pitch(int angle) {
   motor_pitch->step(angle);
 }
 
-void Head::adjust_pitch() {
-  
-}
+void Head::adjust_pitch() {}

@@ -1,0 +1,16 @@
+os: linux
+dist: bionic
+sudo: required
+
+language: cpp
+compiler: gcc
+
+install:
+    - sudo apt-get update -y
+    - sudo apt-get install -y python-pip
+    - python -m pip install cpplint
+    - sudo apt-get install -y cppcheck
+
+script:
+    - source linters/run_cpplint.sh
+    - source linters/run_cppcheck.sh

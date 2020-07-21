@@ -15,13 +15,13 @@
 /////////////////////////////////
 
 /// Chassis /////////////////////
-#define L_IN_F 0 // IN1
-#define L_IN_B 0 // IN2
-#define L_EN 0 // ENA
+#define L_IN_F 0  // IN1
+#define L_IN_B 0  // IN2
+#define L_EN 0  // ENA
 
-#define R_IN_F 26 // IN3
-#define R_IN_B 24 // IN4
-#define R_EN 22 // ENB
+#define R_IN_F 26  // IN3
+#define R_IN_B 24  // IN4
+#define R_EN 22  // ENB
 
 #define L_ENC_IN_F 0
 #define L_ENC_IN_B 0

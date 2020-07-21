@@ -4,15 +4,13 @@
 #include "modules/hand/hand.h"
 #include "modules/head.h"
 
-class Platform
-{
-public:
-    explicit Platform();
+class Platform {
+ public:
+    Platform();
     ~Platform();
 
     Hand* l_hand;
     Hand* r_hand;
     Chassis* chassis;
     Head* head;
-    
 };

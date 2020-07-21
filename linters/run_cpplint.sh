@@ -1,0 +1,1 @@
+cpplint --filter=-legal/copyright,-build/include,-whitespace/tab --extensions=cpp,h,ino `find -regex '\(.*[.]cpp\|.*[.]h\|.*[.]ino\)'`

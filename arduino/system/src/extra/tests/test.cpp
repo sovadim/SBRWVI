@@ -4,11 +4,9 @@
 namespace TESTS {
 
 void all_modules(Platform *platform) {
-
     delay(2000);
 
     if (T_HEAD) {
-        
         // DEBUG
         platform->head->set_yaw(1);
         delay(150);
@@ -37,7 +35,6 @@ void all_modules(Platform *platform) {
     }
 
     if (T_SHOULDER) {
-
         Serial.print("20\n");
         platform->l_hand->set_rotation_shoulder(90 + 20, false);
         platform->r_hand->set_rotation_shoulder(90 + 20, true);
@@ -90,7 +87,7 @@ void all_modules(Platform *platform) {
         // Roght hand
         platform->r_hand->wrist->start(true);
         delay(1000);
-        
+
         platform->r_hand->wrist->stop();
         delay(500);
 
@@ -101,12 +98,11 @@ void all_modules(Platform *platform) {
     }
 }
 
-} // namespace TESTS
+}  // namespace TESTS
 
 namespace MISSIONS {
 
 void core(Platform *platform) {
-
     // Hand up
     platform->r_hand->forearm->start(false);
     delay(1500);
@@ -138,7 +134,6 @@ void core(Platform *platform) {
     platform->r_hand->wrist->start(true);
     delay(500);
     platform->r_hand->wrist->stop();
-
 }
 
-}
+}  // namespace MISSIONS

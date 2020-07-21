@@ -1,15 +1,14 @@
 #pragma once
 #include "pins.h"
 
-class DCMotor
-{
-public:
+class DCMotor {
+ public:
     explicit DCMotor(Pins pins);
     ~DCMotor();
 
     // Set speed of motor rotation
     void set_speed(int rate);
 
-private:
+ private:
     Pins pins;
 };

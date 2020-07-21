@@ -16,10 +16,10 @@ namespace TESTS {
 void all_modules(Platform *platform);
 
 
-} // namespace TESTS
+}  // namespace TESTS
 
 namespace MISSIONS {
 
 void core(Platform *platform);
 
-} // namespace MISSIONS
+}  // namespace MISSIONS
